@@ -56,7 +56,37 @@
         justify-content: center;
         padding: 10px;
         box-sizing: border-box;
-        width: 100%; /* Set the width to 100% */
+        width: 100%;
+      }
+
+      .article-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        flex-wrap: nowrap;
+        
+      }
+
+      article {
+        border: 1px solid black;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+        width: calc(50% - 2px);
+        margin-bottom: 20px;
+        align-items: center;
+      }
+
+      article img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+      }
+
+      h3 {
+        margin-bottom: 20px;
       }
     </style>
   </head>
@@ -69,6 +99,7 @@
         <li>Contact Us</li>
       </ul>
     </nav>
+
     <section>
       <h2>About Us</h2>
       <p>
@@ -77,6 +108,27 @@
       <img
         src="https://i.pinimg.com/originals/f1/29/fc/f129fc34182afbf1a673b9dd16063a7b.jpg"
       />
+    </section>
+    <h3>Our Services</h3>
+    <section class="article-container">
+      <article>
+        <h4>Web Development</h4>
+        <p>We specialize in creating responsive and user-friendly websites.</p>
+        <img
+          src="https://i.pinimg.com/originals/f4/d6/67/f4d667ebd40be825a90901719bb11176.jpg"
+        />
+      </article>
+
+      <article>
+        <h4>Graphic Design</h4>
+        <p>
+          Our talented designers can bring your ideas to life with stunning
+          visuals.
+        </p>
+        <img
+          src="https://i.pinimg.com/originals/a6/10/6c/a6106c003ddd6d5b834b9df3679a0382.jpg"
+        />
+      </article>
     </section>
 
     <footer>
