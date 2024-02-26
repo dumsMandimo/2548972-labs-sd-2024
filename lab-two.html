@@ -4,24 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lab-two</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin: 20px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        padding: 0;
+      }
+
+      ul li {
+        margin-right: 20px;
+      }
+
+      section {
+        text-align: center;
+      }
+
+      img {
+        width: 600px;
+        height: 400px;
+        margin-top: 20px;
+      }
+
+      footer {
+        display: flex;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%; /* Set the width to 100% */
+      }
+    </style>
   </head>
   <body>
     <nav>
       <h1>Welcome to Software Design Website</h1>
       <ul>
-        About us
-      </ul>
-      <ul>
-        Services
-      </ul>
-      <ul>
-        Contact Us
+        <li>About us</li>
+        <li>Services</li>
+        <li>Contact Us</li>
       </ul>
     </nav>
-    <h2>About Us</h2>
-    <p>
-      We are a company dedicated to providing excellent services to customers.
-    </p>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        We are a company dedicated to providing excellent services to customers.
+      </p>
+      <img
+        src="https://i.pinimg.com/originals/f1/29/fc/f129fc34182afbf1a673b9dd16063a7b.jpg"
+      />
+    </section>
+
     <footer>
       <p>&copy;2024 The Lucky Company. All rights reserved.</p>
     </footer>
